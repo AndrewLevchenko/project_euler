@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+/home/leff/project_euler/.metadata/.plugins/org.eclipse.jdt.core
-2089348824.index
-2665612302.index
-646308851.index
