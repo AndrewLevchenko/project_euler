@@ -5,7 +5,7 @@ A palindromic number reads the same both ways. The largest palindrome made from 
 Find the largest palindrome made from the product of two 3-digit numbers.
 
 
-Note: run as "java -cp ./..../ru.AndrewLevchenko.problem_4"
+Note: run as "java -cp ./..package folder../ru.AndrewLevchenko.problem_4"
 */
 
 

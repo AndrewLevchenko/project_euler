@@ -4,7 +4,7 @@ package ru.AndrewLevchenko;
 The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
 Find the sum of all the primes below two million.
 
-Note: run as "java -cp ./..../ru.AndrewLevchenko.problem_10"
+Note: run as "java -cp ./..package folder../ru.AndrewLevchenko.problem_10"
 */
 
 

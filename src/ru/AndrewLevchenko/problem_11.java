@@ -27,13 +27,12 @@ In the 20×20 grid below, four numbers along a diagonal line have been marked in
 The product of these numbers is 26 × 63 × 78 × 14 = 1788696.
 What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in the 20×20 grid?
 
-Note: run as "java -cp ./..../ru.AndrewLevchenko.problem_11"
+Note: run as "java -cp ./..package folder../ru.AndrewLevchenko.problem_11"
 */
 
 
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Path;
 import java.util.Scanner;
 
@@ -41,13 +40,13 @@ public class problem_11 {
 
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 
-		Scanner in = new Scanner(Path.of("matrix.txt"));
-
+		Scanner sc = new Scanner(new File("/home/leff/matrix.txt"));
 		int numbers[][] = new int[20][20];
-		for (int i = 0; i < 20; i++)
+		for (int i = 0; i < 20; i++){
 			for (int j = 0; j < 20; j++) {
-				numbers[i][j] = in.nextInt();
+				numbers[i][j] = sc.nextInt();
 			}
+		}
 
 		int max_prod = 1;
 		int prod1, prod2, prod3, prod4;
