@@ -8,11 +8,23 @@ Note: run as "java -cp ./..package folder../ru.AndrewLevchenko.problem_3 6008514
 */
 
 
+import java.util.stream.Stream;
 
 public class problem_3 {
 
 	public static void main(String[] args) {
 		long number=Long.parseLong(args[0]);
+
+		// Stream API implementation
+		System.out.println(
+				Stream.iterate((int)(Math.sqrt(number)),(i)->i-1)
+				.takeWhile(i->i>=0)
+				.takeWhile(i->number%i!=0)
+				.findFirst().orElse(0)
+		);
+
+
+		// Classical implementation
 		long numbertemp=number;
 		long limit=(int)Math.sqrt(number);
 		
